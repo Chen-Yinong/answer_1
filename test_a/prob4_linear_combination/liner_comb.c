@@ -21,12 +21,12 @@ int main()
     int *u = (int *)malloc(n * sizeof(int));
     int *v = (int *)malloc(n * sizeof(int));
     int *w = (int *)malloc(n * sizeof(int));
-    printf("Enter vectors u(%d elements ):", &n);
+    printf("Enter vectors u(%d elements ):", n);
     for (int  i = 0; i < n; i++)
     {
         scanf("%d",& u[i]);
     }
-    printf("Enter vectors v(%d elements ):", &n);
+    printf("Enter vectors v(%d elements ):", n);
     for (int  i = 0; i < n; i++)
     {
         scanf("%d",& v[i]);
@@ -35,8 +35,11 @@ int main()
     printf("Your liner combination:");
     for (int i = 0; i < n; i++)
     {
-        printf("%d ",&w[i]);
+        printf("%d ",w[i]);
     }
+    free(u);
+    free(v);
+    free(w);
     printf("\n");
     return 0;
 }
