@@ -6,7 +6,7 @@ int product_of_comfac(int int1,int int2)
     int count = (int)(fmin(int1,int2)),my_prod = 1;
     for(int i = 1;i <= count;i++)
     {
-        if (int1%i==0 & int2%i == 0)
+        if (int1%i==0 && int2%i == 0)
         {
             my_prod *= i;
         }
